@@ -578,3 +578,37 @@ at least 300 of 390 bars: 31 in 2010, 245-251 a year 2011-2022, **140 in 2023** 
 to July 2023 holds only about 210 RTH minutes a day, so those days drop out under the
 pre-registered rule), 246 and 247 in 2024-2025, 202 in 2026. IN-SAMPLE therefore starts
 2010-11-14 (plus 21 warm-up days for the context).
+
+### Result of Amendment 4 (2026-10-29): no variant passes IN-SAMPLE; OUT-OF-SAMPLE stays unopened
+
+`results/20261029-212131_video_nq_bot.json`, log `results/04_run.log`, research log entries 1-41.
+HistData NSXUSD, 3,855 RTH days; IN-SAMPLE 2,498 days (2010-11-15 to 2020-12-31). 40 variants,
+500 coin flips each, 1 MNQ.
+
+- 26 of 40 variants are positive gross of costs, 13 after costs, **4 at 2x costs**. Costs are
+  the main story: `orb5|none` makes +$8,227 gross and +$2,784 net, so costs take 66% of it
+  (the video's own "74% of the profits were fake").
+- **No variant has a day-bootstrap 95% CI of mean net P&L per trade above zero.** That gate
+  alone fails all 40.
+- Coin flip: no variant reaches the pre-registered p = 1/501. Closest: `orb5|ema` p = 0.008
+  (+$3,046 net over 10 years, +$2.59 a trade, CI [-1.22, +6.65], 2x costs +$430),
+  `orb5|none` 0.010, `gap_go|ema` 0.010 (328 trades, CI [-2.10, +13.41]), `ib_break|lovol` 0.016,
+  `gap_go|lovol` 0.016. With 40 variants tried, about 2 would show p <= 0.05 by luck alone; 8 do.
+  Random versions lose money on costs (median coin flip for `orb5|ema` -$1,250), so beating
+  the coin flip here mostly means losing less to costs, and even that is not significant.
+- Weakest: `pdhl_break` loses in every filter (coin flip better 74-98% of the time),
+  `intraday_mom` and `rsi2_rev` lose net in every filter.
+
+**Prop simulation, information only, NOT a pass** (`orb5|ema`, full history, generic 50K,
++$3,000 target, $2,000 trailing EOD drawdown, start every day): pass rate 64.9% at 1 MNQ but
+a median 1,110 trading days to pass; 46.9% (357 days) at 2; 31.2% (100 days) at 3; 43.5%
+(87 days) at 5; 37.3% (19 days) at 10. Random-entry versions pass 16-20% at every size.
+Bigger size passes faster but not more often, which is the video's sizing lesson; with no
+edge, size only trades waiting time for blow-up risk.
+
+Verdict: on this data the 10 published strategies and the video's filter step do not
+produce a tradable edge in MNQ after costs. The video's rule applies: none beats a coin flip
+at the bar set before running, so none goes to OUT-OF-SAMPLE, the portfolio, the dealer or
+live. The near misses (`orb5|ema`, `gap_go|ema`) are not re-tested with new tweaks: that
+would be the overfitting the video warns about. A new test needs a new amendment, ideally on
+real NQ futures data (Databento), with the trial count carried forward from this log.

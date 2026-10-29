@@ -1,0 +1,853 @@
+{
+  "summary": {
+    "data": "HistData NSXUSD 1m CFD, 2010-11 to 2026-10",
+    "first_day": "2010-11-15",
+    "last_day": "2026-10-23",
+    "in_sample_days": 2498,
+    "out_of_sample_days": 1336,
+    "variants": 40,
+    "versions_tested_in_log": 40,
+    "in_sample_survivors": [],
+    "passed_both": [],
+    "prop_informational_variant": "orb5|ema",
+    "prop_informational": {
+      "1": {
+        "starts_resolved": 3743,
+        "pass_rate": 0.6492118621426664,
+        "median_days_to_pass": 1110.5,
+        "attempts_per_pass": 1.5403292181069959,
+        "coin_flip_pass_rate_mean": 0.16275045078710584
+      },
+      "2": {
+        "starts_resolved": 3799,
+        "pass_rate": 0.46880758094235325,
+        "median_days_to_pass": 357.0,
+        "attempts_per_pass": 2.13307130825379,
+        "coin_flip_pass_rate_mean": 0.17721565853782714
+      },
+      "3": {
+        "starts_resolved": 3829,
+        "pass_rate": 0.3118307652128493,
+        "median_days_to_pass": 99.5,
+        "attempts_per_pass": 3.2068676716917923,
+        "coin_flip_pass_rate_mean": 0.16463151421607597
+      },
+      "5": {
+        "starts_resolved": 3829,
+        "pass_rate": 0.4345782188560982,
+        "median_days_to_pass": 87.0,
+        "attempts_per_pass": 2.301081730769231,
+        "coin_flip_pass_rate_mean": 0.1774949113740209
+      },
+      "10": {
+        "starts_resolved": 3830,
+        "pass_rate": 0.372845953002611,
+        "median_days_to_pass": 19.0,
+        "attempts_per_pass": 2.6820728291316525,
+        "coin_flip_pass_rate_mean": 0.19658479076074073
+      }
+    }
+  },
+  "variants": {
+    "orb5|none": {
+      "in_sample": {
+        "trades": 2447,
+        "net_usd": 2784.41799999994,
+        "net_usd_2x": -2657.86200000006,
+        "gross_usd": 8226.697999999942,
+        "mean_usd": 1.1378904781364692,
+        "win_rate": 0.22026971802206785,
+        "ci95": [
+          -1.6362540662035316,
+          3.873790886800119
+        ],
+        "coin_flip_pct_better": 0.008,
+        "coin_flip_p": 0.00998003992015968,
+        "coin_flip_median_usd": -3772.117000000041,
+        "top_year_share": 0.455536147706836,
+        "max_dd_usd": 2067.1999999999935,
+        "IS_PASS": false
+      }
+    },
+    "orb5|ema": {
+      "in_sample": {
+        "trades": 1176,
+        "net_usd": 3045.82600000003,
+        "net_usd_2x": 429.58600000002957,
+        "gross_usd": 5662.066000000031,
+        "mean_usd": 2.589988095238121,
+        "win_rate": 0.23639455782312926,
+        "ci95": [
+          -1.2212418792516593,
+          6.649729761904801
+        ],
+        "coin_flip_pct_better": 0.006,
+        "coin_flip_p": 0.007984031936127744,
+        "coin_flip_median_usd": -1250.2659999999742,
+        "top_year_share": 0.3247739371269067,
+        "max_dd_usd": 1178.3999999999887,
+        "IS_PASS": false
+      }
+    },
+    "orb5|hivol": {
+      "in_sample": {
+        "trades": 1221,
+        "net_usd": 2255.422000000005,
+        "net_usd_2x": -459.11799999999494,
+        "gross_usd": 4969.962000000006,
+        "mean_usd": 1.8471924651924694,
+        "win_rate": 0.22768222768222768,
+        "ci95": [
+          -2.316332719082705,
+          6.191314414414439
+        ],
+        "coin_flip_pct_better": 0.058,
+        "coin_flip_p": 0.059880239520958084,
+        "coin_flip_median_usd": -1439.1600000000146,
+        "top_year_share": 0.5643050575453763,
+        "max_dd_usd": 1491.9539999999997,
+        "IS_PASS": false
+      }
+    },
+    "orb5|lovol": {
+      "in_sample": {
+        "trades": 1226,
+        "net_usd": 528.9959999999351,
+        "net_usd_2x": -2198.7440000000643,
+        "gross_usd": 3256.735999999936,
+        "mean_usd": 0.43148123980418845,
+        "win_rate": 0.2128874388254486,
+        "ci95": [
+          -2.7164339314845662,
+          3.8392140293637143
+        ],
+        "coin_flip_pct_better": 0.04,
+        "coin_flip_p": 0.041916167664670656,
+        "coin_flip_median_usd": -2403.6570000000456,
+        "top_year_share": 0.44756653154515585,
+        "max_dd_usd": 1680.380000000029,
+        "IS_PASS": false
+      }
+    },
+    "orb30|none": {
+      "in_sample": {
+        "trades": 2477,
+        "net_usd": -5477.729999999975,
+        "net_usd_2x": -11026.209999999974,
+        "gross_usd": 70.7500000000282,
+        "mean_usd": -2.2114372224464978,
+        "win_rate": 0.40976988292289057,
+        "ci95": [
+          -5.404504884941454,
+          1.2067451554299498
+        ],
+        "coin_flip_pct_better": 0.668,
+        "coin_flip_p": 0.6686626746506986,
+        "coin_flip_median_usd": -3974.5389999999734,
+        "top_year_share": 1.0,
+        "max_dd_usd": 6248.637999999723,
+        "IS_PASS": false
+      }
+    },
+    "orb30|ema": {
+      "in_sample": {
+        "trades": 1261,
+        "net_usd": -2464.655999999948,
+        "net_usd_2x": -5289.295999999946,
+        "gross_usd": 359.98400000005404,
+        "mean_usd": -1.9545249801744236,
+        "win_rate": 0.42505947660586835,
+        "ci95": [
+          -6.34985253766846,
+          2.572536677240321
+        ],
+        "coin_flip_pct_better": 0.664,
+        "coin_flip_p": 0.6646706586826348,
+        "coin_flip_median_usd": -1514.7650000000172,
+        "top_year_share": 0.7653793320400616,
+        "max_dd_usd": 4433.241999999861,
+        "IS_PASS": false
+      }
+    },
+    "orb30|hivol": {
+      "in_sample": {
+        "trades": 1235,
+        "net_usd": -5642.782000000001,
+        "net_usd_2x": -8409.181999999997,
+        "gross_usd": -2876.381999999998,
+        "mean_usd": -4.569054251012147,
+        "win_rate": 0.41295546558704455,
+        "ci95": [
+          -9.631078947368431,
+          0.7863472064777532
+        ],
+        "coin_flip_pct_better": 0.932,
+        "coin_flip_p": 0.9321357285429142,
+        "coin_flip_median_usd": -1761.4960000000283,
+        "top_year_share": 0.5325643414837836,
+        "max_dd_usd": 6651.14199999998,
+        "IS_PASS": false
+      }
+    },
+    "orb30|lovol": {
+      "in_sample": {
+        "trades": 1242,
+        "net_usd": 165.0520000000247,
+        "net_usd_2x": -2617.0279999999743,
+        "gross_usd": 2947.132000000026,
+        "mean_usd": 0.13289210950082503,
+        "win_rate": 0.40660225442834136,
+        "ci95": [
+          -3.8600320450885484,
+          4.209491867954917
+        ],
+        "coin_flip_pct_better": 0.096,
+        "coin_flip_p": 0.09780439121756487,
+        "coin_flip_median_usd": -2491.284999999977,
+        "top_year_share": 0.7019949703792429,
+        "max_dd_usd": 4486.8599999999105,
+        "IS_PASS": false
+      }
+    },
+    "ib_break|none": {
+      "in_sample": {
+        "trades": 2349,
+        "net_usd": -1442.7720000000058,
+        "net_usd_2x": -6445.032000000005,
+        "gross_usd": 3559.4879999999957,
+        "mean_usd": -0.6142068965517267,
+        "win_rate": 0.41890166028097064,
+        "ci95": [
+          -3.083413729246475,
+          1.9041660706683443
+        ],
+        "coin_flip_pct_better": 0.116,
+        "coin_flip_p": 0.11776447105788423,
+        "coin_flip_median_usd": -4548.415999999995,
+        "top_year_share": 0.411487223613651,
+        "max_dd_usd": 2549.2000000000057,
+        "IS_PASS": false
+      }
+    },
+    "ib_break|ema": {
+      "in_sample": {
+        "trades": 1221,
+        "net_usd": -499.179999999929,
+        "net_usd_2x": -3114.2199999999293,
+        "gross_usd": 2115.8600000000715,
+        "mean_usd": -0.4088288288287707,
+        "win_rate": 0.4275184275184275,
+        "ci95": [
+          -3.605067239967149,
+          2.691542260442329
+        ],
+        "coin_flip_pct_better": 0.174,
+        "coin_flip_p": 0.17564870259481039,
+        "coin_flip_median_usd": -2386.3769999999645,
+        "top_year_share": 0.3233602198191742,
+        "max_dd_usd": 2028.9479999999346,
+        "IS_PASS": false
+      }
+    },
+    "ib_break|hivol": {
+      "in_sample": {
+        "trades": 1180,
+        "net_usd": -2616.077999999997,
+        "net_usd_2x": -5129.277999999996,
+        "gross_usd": -102.87799999999606,
+        "mean_usd": -2.2170152542372854,
+        "win_rate": 0.41440677966101697,
+        "ci95": [
+          -6.110873177966079,
+          1.7013692796610096
+        ],
+        "coin_flip_pct_better": 0.512,
+        "coin_flip_p": 0.5129740518962076,
+        "coin_flip_median_usd": -2555.410000000017,
+        "top_year_share": 0.3654691096033609,
+        "max_dd_usd": 3568.684000000013,
+        "IS_PASS": false
+      }
+    },
+    "ib_break|lovol": {
+      "in_sample": {
+        "trades": 1169,
+        "net_usd": 1173.3059999999912,
+        "net_usd_2x": -1315.754000000008,
+        "gross_usd": 3662.365999999992,
+        "mean_usd": 1.0036834901625244,
+        "win_rate": 0.4234388366124893,
+        "ci95": [
+          -1.8754698032506758,
+          3.977333704020505
+        ],
+        "coin_flip_pct_better": 0.014,
+        "coin_flip_p": 0.015968063872255488,
+        "coin_flip_median_usd": -2282.0919999999724,
+        "top_year_share": 0.5275732564440202,
+        "max_dd_usd": 1458.7800000000111,
+        "IS_PASS": false
+      }
+    },
+    "gap_fade|none": {
+      "in_sample": {
+        "trades": 1355,
+        "net_usd": -1279.9040000000123,
+        "net_usd_2x": -4038.1040000000107,
+        "gross_usd": 1478.2959999999894,
+        "mean_usd": -0.944578597785987,
+        "win_rate": 0.5011070110701107,
+        "ci95": [
+          -4.758367158671587,
+          2.5769737269372603
+        ],
+        "coin_flip_pct_better": 0.194,
+        "coin_flip_p": 0.19560878243512975,
+        "coin_flip_median_usd": -2904.8919999999853,
+        "top_year_share": 0.5873603330099153,
+        "max_dd_usd": 2047.3520000000392,
+        "IS_PASS": false
+      }
+    },
+    "gap_fade|ema": {
+      "in_sample": {
+        "trades": 635,
+        "net_usd": 293.84599999999693,
+        "net_usd_2x": -995.0540000000024,
+        "gross_usd": 1582.7459999999974,
+        "mean_usd": 0.46274960629920775,
+        "win_rate": 0.525984251968504,
+        "ci95": [
+          -4.946835905511815,
+          5.814905511810979
+        ],
+        "coin_flip_pct_better": 0.098,
+        "coin_flip_p": 0.0998003992015968,
+        "coin_flip_median_usd": -1359.7880000000032,
+        "top_year_share": 0.6049920123671884,
+        "max_dd_usd": 1400.6760000000002,
+        "IS_PASS": false
+      }
+    },
+    "gap_fade|hivol": {
+      "in_sample": {
+        "trades": 689,
+        "net_usd": 972.718000000006,
+        "net_usd_2x": -422.14199999999346,
+        "gross_usd": 2367.578000000007,
+        "mean_usd": 1.4117822931785282,
+        "win_rate": 0.5181422351233672,
+        "ci95": [
+          -4.174470464441176,
+          6.8989216981132495
+        ],
+        "coin_flip_pct_better": 0.058,
+        "coin_flip_p": 0.059880239520958084,
+        "coin_flip_median_usd": -1297.215999999992,
+        "top_year_share": 0.3770826268088303,
+        "max_dd_usd": 1271.519999999995,
+        "IS_PASS": false
+      }
+    },
+    "gap_fade|lovol": {
+      "in_sample": {
+        "trades": 666,
+        "net_usd": -2252.622000000018,
+        "net_usd_2x": -3615.9620000000164,
+        "gross_usd": -889.2820000000174,
+        "mean_usd": -3.3823153153153425,
+        "win_rate": 0.48348348348348347,
+        "ci95": [
+          -8.127086261261256,
+          1.2545070570570718
+        ],
+        "coin_flip_pct_better": 0.73,
+        "coin_flip_p": 0.7305389221556886,
+        "coin_flip_median_usd": -1527.7040000000088,
+        "top_year_share": 0.9291514413317071,
+        "max_dd_usd": 2496.078000000024,
+        "IS_PASS": false
+      }
+    },
+    "gap_go|none": {
+      "in_sample": {
+        "trades": 623,
+        "net_usd": 597.799999999979,
+        "net_usd_2x": -797.7200000000203,
+        "gross_usd": 1993.3199999999797,
+        "mean_usd": 0.9595505617977191,
+        "win_rate": 0.23595505617977527,
+        "ci95": [
+          -4.044639325842716,
+          6.280542857142809
+        ],
+        "coin_flip_pct_better": 0.138,
+        "coin_flip_p": 0.13972055888223553,
+        "coin_flip_median_usd": -741.0819999999926,
+        "top_year_share": 0.6744452397995846,
+        "max_dd_usd": 779.3340000000051,
+        "IS_PASS": false
+      }
+    },
+    "gap_go|ema": {
+      "in_sample": {
+        "trades": 328,
+        "net_usd": 1763.105999999995,
+        "net_usd_2x": 1028.3859999999954,
+        "gross_usd": 2497.8259999999955,
+        "mean_usd": 5.375323170731692,
+        "win_rate": 0.27439024390243905,
+        "ci95": [
+          -2.10376250000002,
+          13.41280655487798
+        ],
+        "coin_flip_pct_better": 0.008,
+        "coin_flip_p": 0.00998003992015968,
+        "coin_flip_median_usd": -271.85799999999585,
+        "top_year_share": 0.47562650542172863,
+        "max_dd_usd": 348.71400000000153,
+        "IS_PASS": false
+      }
+    },
+    "gap_go|hivol": {
+      "in_sample": {
+        "trades": 304,
+        "net_usd": -694.6160000000028,
+        "net_usd_2x": -1375.5760000000028,
+        "gross_usd": -13.656000000002678,
+        "mean_usd": -2.284921052631588,
+        "win_rate": 0.23355263157894737,
+        "ci95": [
+          -9.114745888157877,
+          5.100028453947359
+        ],
+        "coin_flip_pct_better": 0.616,
+        "coin_flip_p": 0.6167664670658682,
+        "coin_flip_median_usd": -410.00799999999435,
+        "top_year_share": 0.49420626484522495,
+        "max_dd_usd": 868.9340000000067,
+        "IS_PASS": false
+      }
+    },
+    "gap_go|lovol": {
+      "in_sample": {
+        "trades": 319,
+        "net_usd": 1292.4159999999822,
+        "net_usd_2x": 577.8559999999823,
+        "gross_usd": 2006.9759999999824,
+        "mean_usd": 4.051460815046966,
+        "win_rate": 0.23824451410658307,
+        "ci95": [
+          -2.9885097178684394,
+          11.833493260187998
+        ],
+        "coin_flip_pct_better": 0.014,
+        "coin_flip_p": 0.015968063872255488,
+        "coin_flip_median_usd": -514.1349999999933,
+        "top_year_share": 0.46408300095652677,
+        "max_dd_usd": 465.8720000000012,
+        "IS_PASS": false
+      }
+    },
+    "intraday_mom|none": {
+      "in_sample": {
+        "trades": 2485,
+        "net_usd": -5182.58200000011,
+        "net_usd_2x": -10748.98200000011,
+        "gross_usd": 383.8179999998911,
+        "mean_usd": -2.085546076458797,
+        "win_rate": 0.4450704225352113,
+        "ci95": [
+          -3.501004909456783,
+          -0.7525055130785037
+        ],
+        "coin_flip_pct_better": 0.384,
+        "coin_flip_p": 0.3852295409181637,
+        "coin_flip_median_usd": -5646.948000000017,
+        "top_year_share": 1.0,
+        "max_dd_usd": 5250.669999999821,
+        "IS_PASS": false
+      }
+    },
+    "intraday_mom|ema": {
+      "in_sample": {
+        "trades": 1250,
+        "net_usd": -2910.0660000000835,
+        "net_usd_2x": -5710.0660000000835,
+        "gross_usd": -110.06600000008257,
+        "mean_usd": -2.3280528000000666,
+        "win_rate": 0.4672,
+        "ci95": [
+          -4.42753520000011,
+          -0.33767548000007386
+        ],
+        "coin_flip_pct_better": 0.568,
+        "coin_flip_p": 0.5688622754491018,
+        "coin_flip_median_usd": -2723.381000000015,
+        "top_year_share": 0.6148545569859839,
+        "max_dd_usd": 3140.0460000000808,
+        "IS_PASS": false
+      }
+    },
+    "intraday_mom|hivol": {
+      "in_sample": {
+        "trades": 1243,
+        "net_usd": -2078.3620000000656,
+        "net_usd_2x": -4862.682000000066,
+        "gross_usd": 705.9579999999341,
+        "mean_usd": -1.6720530973451855,
+        "win_rate": 0.4473049074818986,
+        "ci95": [
+          -3.993842638777191,
+          0.6018385358004215
+        ],
+        "coin_flip_pct_better": 0.282,
+        "coin_flip_p": 0.2834331337325349,
+        "coin_flip_median_usd": -2834.192000000011,
+        "top_year_share": 1.0,
+        "max_dd_usd": 2333.9620000000714,
+        "IS_PASS": false
+      }
+    },
+    "intraday_mom|lovol": {
+      "in_sample": {
+        "trades": 1242,
+        "net_usd": -3104.2200000000435,
+        "net_usd_2x": -5886.300000000044,
+        "gross_usd": -322.1400000000431,
+        "mean_usd": -2.4993719806763637,
+        "win_rate": 0.4428341384863124,
+        "ci95": [
+          -3.960532850241561,
+          -1.005528220611976
+        ],
+        "coin_flip_pct_better": 0.648,
+        "coin_flip_p": 0.6487025948103793,
+        "coin_flip_median_usd": -2731.448000000002,
+        "top_year_share": 1.0,
+        "max_dd_usd": 3104.2199999999793,
+        "IS_PASS": false
+      }
+    },
+    "noise_break|none": {
+      "in_sample": {
+        "trades": 1495,
+        "net_usd": 355.11399999993876,
+        "net_usd_2x": -2993.686000000059,
+        "gross_usd": 3703.9139999999416,
+        "mean_usd": 0.23753444816049415,
+        "win_rate": 0.48762541806020065,
+        "ci95": [
+          -4.488956555183969,
+          5.0451356187290575
+        ],
+        "coin_flip_pct_better": 0.116,
+        "coin_flip_p": 0.11776447105788423,
+        "coin_flip_median_usd": -3187.806999999968,
+        "top_year_share": 0.8516972414471687,
+        "max_dd_usd": 2336.5600000000177,
+        "IS_PASS": false
+      }
+    },
+    "noise_break|ema": {
+      "in_sample": {
+        "trades": 724,
+        "net_usd": -183.27400000004366,
+        "net_usd_2x": -1805.0340000000429,
+        "gross_usd": 1438.485999999958,
+        "mean_usd": -0.25314088397796086,
+        "win_rate": 0.5,
+        "ci95": [
+          -6.932875000000056,
+          6.583157941988894
+        ],
+        "coin_flip_pct_better": 0.316,
+        "coin_flip_p": 0.31736526946107785,
+        "coin_flip_median_usd": -1286.983000000004,
+        "top_year_share": 0.3702916271127699,
+        "max_dd_usd": 1751.6200000000088,
+        "IS_PASS": false
+      }
+    },
+    "noise_break|hivol": {
+      "in_sample": {
+        "trades": 810,
+        "net_usd": 2498.223999999968,
+        "net_usd_2x": 683.8239999999689,
+        "gross_usd": 4312.62399999997,
+        "mean_usd": 3.0842271604937874,
+        "win_rate": 0.5111111111111111,
+        "ci95": [
+          -3.930110617283982,
+          10.057652222222147
+        ],
+        "coin_flip_pct_better": 0.044,
+        "coin_flip_p": 0.04590818363273453,
+        "coin_flip_median_usd": -1892.172000000016,
+        "top_year_share": 0.47355994062597917,
+        "max_dd_usd": 2640.2800000000097,
+        "IS_PASS": false
+      }
+    },
+    "noise_break|lovol": {
+      "in_sample": {
+        "trades": 685,
+        "net_usd": -2143.110000000029,
+        "net_usd_2x": -3677.510000000028,
+        "gross_usd": -608.7100000000282,
+        "mean_usd": -3.1286277372263194,
+        "win_rate": 0.45985401459854014,
+        "ci95": [
+          -8.84959153284677,
+          2.6257449635036134
+        ],
+        "coin_flip_pct_better": 0.658,
+        "coin_flip_p": 0.6586826347305389,
+        "coin_flip_median_usd": -1451.662000000003,
+        "top_year_share": 0.5979775778033072,
+        "max_dd_usd": 3082.699999999989,
+        "IS_PASS": false
+      }
+    },
+    "pdhl_break|none": {
+      "in_sample": {
+        "trades": 2195,
+        "net_usd": -7653.2620000000115,
+        "net_usd_2x": -12570.062000000009,
+        "gross_usd": -2736.4620000000095,
+        "mean_usd": -3.4866797266514857,
+        "win_rate": 0.2988610478359909,
+        "ci95": [
+          -6.329029863325751,
+          -0.5014574031890882
+        ],
+        "coin_flip_pct_better": 0.968,
+        "coin_flip_p": 0.9680638722554891,
+        "coin_flip_median_usd": -2413.9679999999753,
+        "top_year_share": 0.5983372582086646,
+        "max_dd_usd": 7767.981999999806,
+        "IS_PASS": false
+      }
+    },
+    "pdhl_break|ema": {
+      "in_sample": {
+        "trades": 1193,
+        "net_usd": -4971.545999999919,
+        "net_usd_2x": -7643.86599999992,
+        "gross_usd": -2299.2259999999187,
+        "mean_usd": -4.167264040234635,
+        "win_rate": 0.2967309304274937,
+        "ci95": [
+          -7.773208675607639,
+          -0.45131944677278274
+        ],
+        "coin_flip_pct_better": 0.942,
+        "coin_flip_p": 0.9421157684630739,
+        "coin_flip_median_usd": -1777.3989999999553,
+        "top_year_share": 0.7246790527463194,
+        "max_dd_usd": 5082.495999999814,
+        "IS_PASS": false
+      }
+    },
+    "pdhl_break|hivol": {
+      "in_sample": {
+        "trades": 1012,
+        "net_usd": -4929.784000000033,
+        "net_usd_2x": -7196.6640000000325,
+        "gross_usd": -2662.9040000000323,
+        "mean_usd": -4.8713280632411395,
+        "win_rate": 0.35968379446640314,
+        "ci95": [
+          -9.865853606719384,
+          0.25850207509874473
+        ],
+        "coin_flip_pct_better": 0.982,
+        "coin_flip_p": 0.9820359281437125,
+        "coin_flip_median_usd": -383.75700000003076,
+        "top_year_share": 0.5577872364112765,
+        "max_dd_usd": 5491.59800000002,
+        "IS_PASS": false
+      }
+    },
+    "pdhl_break|lovol": {
+      "in_sample": {
+        "trades": 1183,
+        "net_usd": -2723.4779999999773,
+        "net_usd_2x": -5373.397999999977,
+        "gross_usd": -73.55799999997726,
+        "mean_usd": -2.3021792054099555,
+        "win_rate": 0.24683009298393913,
+        "ci95": [
+          -5.370770710059164,
+          1.1096688081149877
+        ],
+        "coin_flip_pct_better": 0.742,
+        "coin_flip_p": 0.7425149700598802,
+        "coin_flip_median_usd": -1622.1039999999734,
+        "top_year_share": 0.5301570695332931,
+        "max_dd_usd": 2837.997999999963,
+        "IS_PASS": false
+      }
+    },
+    "turtle_soup|none": {
+      "in_sample": {
+        "trades": 1483,
+        "net_usd": -2661.2280000000687,
+        "net_usd_2x": -5783.648000000068,
+        "gross_usd": 461.1919999999318,
+        "mean_usd": -1.794489548213128,
+        "win_rate": 0.30411328388401887,
+        "ci95": [
+          -4.101797403911052,
+          0.5496610923802357
+        ],
+        "coin_flip_pct_better": 0.482,
+        "coin_flip_p": 0.48303393213572854,
+        "coin_flip_median_usd": -2765.3320000000394,
+        "top_year_share": 0.6273861903171656,
+        "max_dd_usd": 2813.726000000072,
+        "IS_PASS": false
+      }
+    },
+    "turtle_soup|ema": {
+      "in_sample": {
+        "trades": 688,
+        "net_usd": -197.89999999997326,
+        "net_usd_2x": -1642.0199999999736,
+        "gross_usd": 1246.2200000000266,
+        "mean_usd": -0.2876453488371704,
+        "win_rate": 0.31976744186046513,
+        "ci95": [
+          -3.5559613372092476,
+          3.0111170058140098
+        ],
+        "coin_flip_pct_better": 0.176,
+        "coin_flip_p": 0.17764471057884232,
+        "coin_flip_median_usd": -1435.4369999999735,
+        "top_year_share": 0.4824374925408776,
+        "max_dd_usd": 1139.5939999999832,
+        "IS_PASS": false
+      }
+    },
+    "turtle_soup|hivol": {
+      "in_sample": {
+        "trades": 670,
+        "net_usd": -2555.098000000027,
+        "net_usd_2x": -3990.8980000000265,
+        "gross_usd": -1119.2980000000261,
+        "mean_usd": -3.813579104477652,
+        "win_rate": 0.24776119402985075,
+        "ci95": [
+          -8.035697537313467,
+          0.5603898507461929
+        ],
+        "coin_flip_pct_better": 0.87,
+        "coin_flip_p": 0.8702594810379242,
+        "coin_flip_median_usd": -1141.1630000000023,
+        "top_year_share": 0.8198781406674936,
+        "max_dd_usd": 2605.4380000000306,
+        "IS_PASS": false
+      }
+    },
+    "turtle_soup|lovol": {
+      "in_sample": {
+        "trades": 813,
+        "net_usd": -106.13000000004192,
+        "net_usd_2x": -1792.750000000043,
+        "gross_usd": 1580.489999999958,
+        "mean_usd": -0.13054120541210568,
+        "win_rate": 0.3505535055350554,
+        "ci95": [
+          -2.325704182041881,
+          2.112659778597738
+        ],
+        "coin_flip_pct_better": 0.038,
+        "coin_flip_p": 0.03992015968063872,
+        "coin_flip_median_usd": -1712.713000000019,
+        "top_year_share": 0.2216897984638376,
+        "max_dd_usd": 999.8879999999924,
+        "IS_PASS": false
+      }
+    },
+    "rsi2_rev|none": {
+      "in_sample": {
+        "trades": 2490,
+        "net_usd": -4784.273999999947,
+        "net_usd_2x": -10361.873999999949,
+        "gross_usd": 793.3260000000528,
+        "mean_usd": -1.9213951807228702,
+        "win_rate": 0.5526104417670683,
+        "ci95": [
+          -3.0428996987951504,
+          -0.7911915863453516
+        ],
+        "coin_flip_pct_better": 0.33,
+        "coin_flip_p": 0.3313373253493014,
+        "coin_flip_median_usd": -5368.803000000016,
+        "top_year_share": 1.0,
+        "max_dd_usd": 5443.783999999633,
+        "IS_PASS": false
+      }
+    },
+    "rsi2_rev|ema": {
+      "in_sample": {
+        "trades": 1256,
+        "net_usd": -3537.0079999999452,
+        "net_usd_2x": -6350.447999999946,
+        "gross_usd": -723.5679999999456,
+        "mean_usd": -2.8160891719744785,
+        "win_rate": 0.5589171974522293,
+        "ci95": [
+          -4.601885031847098,
+          -1.036394148089139
+        ],
+        "coin_flip_pct_better": 0.812,
+        "coin_flip_p": 0.812375249500998,
+        "coin_flip_median_usd": -2630.798999999999,
+        "top_year_share": 1.0,
+        "max_dd_usd": 3561.7679999999314,
+        "IS_PASS": false
+      }
+    },
+    "rsi2_rev|hivol": {
+      "in_sample": {
+        "trades": 1242,
+        "net_usd": -973.0039999999572,
+        "net_usd_2x": -3755.0839999999575,
+        "gross_usd": 1809.0760000000428,
+        "mean_usd": -0.7834170692431217,
+        "win_rate": 0.5789049919484702,
+        "ci95": [
+          -2.7003165458936755,
+          1.1020567230274059
+        ],
+        "coin_flip_pct_better": 0.07,
+        "coin_flip_p": 0.0718562874251497,
+        "coin_flip_median_usd": -2523.75800000001,
+        "top_year_share": 0.5892020007534308,
+        "max_dd_usd": 1799.6959999999888,
+        "IS_PASS": false
+      }
+    },
+    "rsi2_rev|lovol": {
+      "in_sample": {
+        "trades": 1248,
+        "net_usd": -3811.26999999999,
+        "net_usd_2x": -6606.78999999999,
+        "gross_usd": -1015.74999999999,
+        "mean_usd": -3.0539022435897354,
+        "win_rate": 0.5264423076923077,
+        "ci95": [
+          -4.353430729166654,
+          -1.8463779246794654
+        ],
+        "coin_flip_pct_better": 0.948,
+        "coin_flip_p": 0.9481037924151696,
+        "coin_flip_median_usd": -2558.0690000000345,
+        "top_year_share": 1.0,
+        "max_dd_usd": 3963.327999999912,
+        "IS_PASS": false
+      }
+    }
+  }
+}

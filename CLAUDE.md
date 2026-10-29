@@ -43,12 +43,12 @@ net). It is in incubation (`research/06_incubate_tt_moc.py`, paper only); its TE
 Gold Thursday fails the multiple-testing bar (p 0.020). The S&P 100 ranked pullback does
 not beat its basket. Details in the plan.
 
-**NASDAQ 1-minute day-trading pipeline (Amendment 4, 2026-10-29): built, NOT yet run.**
-10 published strategies x 4 filters = 40 variants, MNQ costs, IN-SAMPLE to 2020 /
-OUT-OF-SAMPLE 2021 on, 500-run coin flip, append-only `state/research_log.jsonl`,
-portfolio, prop-firm sizing, paper trader `quant.dealer` (no orders). Blocked on 1-minute
-data: Dukascopy's free datafeed answers 429 and its docs now point to a requester-pays AWS
-tick bucket. Needs a Databento NQ CSV or HistData NSXUSD files from the user.
+**NASDAQ 1-minute day-trading pipeline (Amendment 4, 2026-10-29): run, nothing passes.**
+10 published strategies x 4 filters = 40 variants on HistData NSXUSD 1-minute (2010-11 to
+2026-10; HistData's clock is New York local time, not EST; 2023 Feb-Jul mostly missing), MNQ costs. No variant's
+IN-SAMPLE CI excludes zero and none reaches coin-flip p = 1/501 (best `orb5|ema` p = 0.008).
+OUT-OF-SAMPLE (2021 on) is unopened. 40 versions are in `state/research_log.jsonl`; any
+new NQ test adds to that count. Dealer `quant.dealer` is built but has nothing to run.
 
 ## Next decision
 

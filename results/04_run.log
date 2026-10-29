@@ -5,3 +5,49 @@ orb5|hivol             n= 1221 net=$     2,255 2x=$      -459 gross=$     4,970 
 orb5|lovol             n= 1226 net=$       529 2x=$    -2,199 gross=$     3,257 coin%better=0.040 pass=False
 orb30|none             n= 2477 net=$    -5,478 2x=$   -11,026 gross=$        71 coin%better=0.668 pass=False
 orb30|ema              n= 1261 net=$    -2,465 2x=$    -5,289 gross=$       360 coin%better=0.664 pass=False
+orb30|hivol            n= 1235 net=$    -5,643 2x=$    -8,409 gross=$    -2,876 coin%better=0.932 pass=False
+orb30|lovol            n= 1242 net=$       165 2x=$    -2,617 gross=$     2,947 coin%better=0.096 pass=False
+ib_break|none          n= 2349 net=$    -1,443 2x=$    -6,445 gross=$     3,559 coin%better=0.116 pass=False
+ib_break|ema           n= 1221 net=$      -499 2x=$    -3,114 gross=$     2,116 coin%better=0.174 pass=False
+ib_break|hivol         n= 1180 net=$    -2,616 2x=$    -5,129 gross=$      -103 coin%better=0.512 pass=False
+ib_break|lovol         n= 1169 net=$     1,173 2x=$    -1,316 gross=$     3,662 coin%better=0.014 pass=False
+gap_fade|none          n= 1355 net=$    -1,280 2x=$    -4,038 gross=$     1,478 coin%better=0.194 pass=False
+gap_fade|ema           n=  635 net=$       294 2x=$      -995 gross=$     1,583 coin%better=0.098 pass=False
+gap_fade|hivol         n=  689 net=$       973 2x=$      -422 gross=$     2,368 coin%better=0.058 pass=False
+gap_fade|lovol         n=  666 net=$    -2,253 2x=$    -3,616 gross=$      -889 coin%better=0.730 pass=False
+gap_go|none            n=  623 net=$       598 2x=$      -798 gross=$     1,993 coin%better=0.138 pass=False
+gap_go|ema             n=  328 net=$     1,763 2x=$     1,028 gross=$     2,498 coin%better=0.008 pass=False
+gap_go|hivol           n=  304 net=$      -695 2x=$    -1,376 gross=$       -14 coin%better=0.616 pass=False
+gap_go|lovol           n=  319 net=$     1,292 2x=$       578 gross=$     2,007 coin%better=0.014 pass=False
+intraday_mom|none      n= 2485 net=$    -5,183 2x=$   -10,749 gross=$       384 coin%better=0.384 pass=False
+intraday_mom|ema       n= 1250 net=$    -2,910 2x=$    -5,710 gross=$      -110 coin%better=0.568 pass=False
+intraday_mom|hivol     n= 1243 net=$    -2,078 2x=$    -4,863 gross=$       706 coin%better=0.282 pass=False
+intraday_mom|lovol     n= 1242 net=$    -3,104 2x=$    -5,886 gross=$      -322 coin%better=0.648 pass=False
+noise_break|none       n= 1495 net=$       355 2x=$    -2,994 gross=$     3,704 coin%better=0.116 pass=False
+noise_break|ema        n=  724 net=$      -183 2x=$    -1,805 gross=$     1,438 coin%better=0.316 pass=False
+noise_break|hivol      n=  810 net=$     2,498 2x=$       684 gross=$     4,313 coin%better=0.044 pass=False
+noise_break|lovol      n=  685 net=$    -2,143 2x=$    -3,678 gross=$      -609 coin%better=0.658 pass=False
+pdhl_break|none        n= 2195 net=$    -7,653 2x=$   -12,570 gross=$    -2,736 coin%better=0.968 pass=False
+pdhl_break|ema         n= 1193 net=$    -4,972 2x=$    -7,644 gross=$    -2,299 coin%better=0.942 pass=False
+pdhl_break|hivol       n= 1012 net=$    -4,930 2x=$    -7,197 gross=$    -2,663 coin%better=0.982 pass=False
+pdhl_break|lovol       n= 1183 net=$    -2,723 2x=$    -5,373 gross=$       -74 coin%better=0.742 pass=False
+turtle_soup|none       n= 1483 net=$    -2,661 2x=$    -5,784 gross=$       461 coin%better=0.482 pass=False
+turtle_soup|ema        n=  688 net=$      -198 2x=$    -1,642 gross=$     1,246 coin%better=0.176 pass=False
+turtle_soup|hivol      n=  670 net=$    -2,555 2x=$    -3,991 gross=$    -1,119 coin%better=0.870 pass=False
+turtle_soup|lovol      n=  813 net=$      -106 2x=$    -1,793 gross=$     1,580 coin%better=0.038 pass=False
+rsi2_rev|none          n= 2490 net=$    -4,784 2x=$   -10,362 gross=$       793 coin%better=0.330 pass=False
+rsi2_rev|ema           n= 1256 net=$    -3,537 2x=$    -6,350 gross=$      -724 coin%better=0.812 pass=False
+rsi2_rev|hivol         n= 1242 net=$      -973 2x=$    -3,755 gross=$     1,809 coin%better=0.070 pass=False
+rsi2_rev|lovol         n= 1248 net=$    -3,811 2x=$    -6,607 gross=$    -1,016 coin%better=0.948 pass=False
+
+IN-SAMPLE survivors: none  (versions tested in the log so far: 40)
+
+Nothing passed both. Prop simulation for information only (NOT a pass), best IN-SAMPLE variant orb5|ema, full history:
+   size  1 MNQ: pass 64.9%  median days 1110.5  coin flip 16.3%
+   size  2 MNQ: pass 46.9%  median days 357.0  coin flip 17.7%
+   size  3 MNQ: pass 31.2%  median days 99.5  coin flip 16.5%
+   size  5 MNQ: pass 43.5%  median days 87.0  coin flip 17.7%
+   size 10 MNQ: pass 37.3%  median days 19.0  coin flip 19.7%
+
+wrote C:\Users\KENZE\Documents\Quant_Equities_Crypto\results\20261029-212131_video_nq_bot.json
+EXIT 0
