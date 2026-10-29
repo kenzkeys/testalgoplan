@@ -1,0 +1,7 @@
+HistData NSXUSD 1m CFD, 2010-11 to 2026-10: 3855 RTH days 2010-11-15 to 2026-10-23; IN-SAMPLE 2498 days, OUT-OF-SAMPLE 1336 days
+orb5|none              n= 2447 net=$     2,784 2x=$    -2,658 gross=$     8,227 coin%better=0.008 pass=False
+orb5|ema               n= 1176 net=$     3,046 2x=$       430 gross=$     5,662 coin%better=0.006 pass=False
+orb5|hivol             n= 1221 net=$     2,255 2x=$      -459 gross=$     4,970 coin%better=0.058 pass=False
+orb5|lovol             n= 1226 net=$       529 2x=$    -2,199 gross=$     3,257 coin%better=0.040 pass=False
+orb30|none             n= 2477 net=$    -5,478 2x=$   -11,026 gross=$        71 coin%better=0.668 pass=False
+orb30|ema              n= 1261 net=$    -2,465 2x=$    -5,289 gross=$       360 coin%better=0.664 pass=False
