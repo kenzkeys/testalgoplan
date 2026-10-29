@@ -1,0 +1,67 @@
+# Paper-only incubation of the frozen tt_moc cell (docs/00_RESEARCH_PLAN.md Amendment 6).
+# Never places an order. Commits the incubation log back to the repo after every run.
+#
+# Two weekday triggers, 20 minutes before the 15:45 ET window on each side of US daylight
+# saving: 19:25 UTC is 15:25 EDT, 20:25 UTC is 15:25 EST. The off-season trigger only
+# reconciles official closes. scripts/wait_for_window.py absorbs late starts.
+
+name: incubate tt_moc
+
+on:
+  schedule:
+    - cron: "25 19 * * 1-5"
+    - cron: "25 20 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: incubate-tt-moc
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Wait for the decision window
+        run: python scripts/wait_for_window.py
+
+      - name: Install
+        run: pip install --quiet pandas yfinance
+
+      - name: Incubation step
+        shell: bash  # explicit, so GitHub runs it with -o pipefail and tee cannot hide a failure
+        env:
+          PYTHONPATH: src
+        run: |
+          for i in 1 2 3 4 5 6; do
+            python research/06_incubate_tt_moc.py 2>&1 | tee -a state/incubation_run.log && exit 0
+            echo "attempt $i failed, retrying in 60s" | tee -a state/incubation_run.log
+            sleep 60
+          done
+          exit 1
+
+      - name: Commit log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/incubation_tt_moc.csv state/incubation_run.log
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "incubation: tt_moc paper run $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull --rebase --quiet && git push && exit 0
+            sleep 10
+          done
+          exit 1
