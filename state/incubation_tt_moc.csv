@@ -1,3 +1,4 @@
 date,action,quote,quote_time_ny,prior_close,official_close,gap_bps,close_says_buy,flip,paper_return
 2026-10-29,START,,,,769.3600,,,,
 2026-11-02,MISSED_MONDAY,,,,752.1000,,True,,
+2026-11-09,MISSED_MONDAY,,,,752.6900,,False,,
